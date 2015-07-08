@@ -34,7 +34,7 @@
     if ((is_chrome)&&(is_safari)) {is_safari=false;}
     if ((is_chrome)&&(is_opera)) {is_chrome=false;}
 
-    if (!is_safari) {
+    if (is_chrome) {
         Element.prototype.remove = function () {
             this.parentElement.removeChild(this);
         }
