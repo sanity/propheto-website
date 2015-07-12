@@ -24,7 +24,6 @@
     <h4 style="text-align: center; color: white;">(This is much cooler in <a style="color: white; text-decoration: none;" href="https://www.google.com/chrome/index.html">Chrome</a>)</h4>
 </div>
 <canvas id="canvas" style="position:absolute; top:0; left:0;"></canvas>
-<audio src="/audio/snowflake-stay.mp3" id="mp3" preload="auto"></audio>
 <div id="buffer" style="display:none;"/>
 <script>
 
@@ -37,8 +36,6 @@
     if ((is_chrome)&&(is_opera)) {is_chrome=false;}
 
     if (is_chrome) {
-        document.getElementById("mp3").play();
-
         Element.prototype.remove = function () {
             this.parentElement.removeChild(this);
         }
